@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Nkanyiso Portfolio</title>
+		<meta name="description" content="A draggable image strip layout with a content preview powered by Draggabilly and TweenMax." />
+		<meta name="keywords" content="draggable, images, horizontal, layout, flexbox, grid, css, tweenmax, draggabilly, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/ugp0unb.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="loading">
+		<main>
+			<div class="frame">
+				<div class="frame__title-wrap">
+					<h1 class="frame__title" style='font-weight: 400; font-size: 150%'>Nkanyiso's Portfolio</h1>
+					<div class="frame__links">
+						<!-- <a href="#index.html">Work</a>
+						<a href="#">Resume</a>
+						<a href="#">About</a> -->
+					</div>
+				</div>
+				<h3 class="frame__subtitle">Nkanyiso - 2019</h3>
+				<div class="frame__indicator"></div>
+			</div>
+			<div class="strip-outer">
+				<div class="strip-inner">
+					<div class="draggable"></div>
+					<div class="strip">
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-s"><div class="img-inner strip__item-link" style="background-image:url('img/food2.jpeg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>Manje</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-m"><div class="img-inner strip__item-link" style="background-image:url('img/closet2.jpeg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>Kas</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-xl"><div class="img-inner strip__item-link" style="background-image:url('img/UbicaLogoBlackX.png');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>Ubica</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-l"><div class="img-inner strip__item-link" style="background-image:url('img/bank2.jpeg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>Arngren</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-s"><div class="img-inner strip__item-link" style="background-image:url('img/AlmanacBlack.png');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>Almanac</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-m"><div class="img-inner strip__item-link" style="background-image:url('img/paint.jpeg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>Experimentations</span></a><span class="strip__item-plus"></span></span>
+						</div>
+
+						<!-- <div class="strip__item">
+							<div class="img-outer img-outer--size-s"><div class="img-inner strip__item-link" style="background-image:url('img/line.png');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>Manje</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-m"><div class="img-inner strip__item-link" style="background-image:url('img/line.png');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>Kas</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-xl"><div class="img-inner strip__item-link" style="background-image:url('img/UbicaLogoBlackX.png');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>Ubica</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-l"><div class="img-inner strip__item-link" style="background-image:url('img/line.png');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>XPress</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-s"><div class="img-inner strip__item-link" style="background-image:url('img/line.png');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>Almanac</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-m"><div class="img-inner strip__item-link" style="background-image:url('img/line.png');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>Experimentations</span></a><span class="strip__item-plus"></span></span>
+						</div> -->
+
+						<!-- <div class="strip__item">
+							<div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/7.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>07</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-l"><div class="img-inner" style="background-image:url('img/8.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>08</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/9.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>09</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer"><div class="img-inner" style="background-image:url('img/10.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>10</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/11.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>11</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-xl"><div class="img-inner" style="background-image:url('img/12.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>12</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/13.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>13</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-l"><div class="img-inner" style="background-image:url('img/14.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>14</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/15.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>15</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-l"><div class="img-inner" style="background-image:url('img/16.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>16</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-m"><div class="img-inner" style="background-image:url('img/17.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>17</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer"><div class="img-inner" style="background-image:url('img/18.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>18</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/19.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>19</span></a><span class="strip__item-plus"></span></span>
+						</div> -->
+					</div><!--/strip-->
+				</div><!--/strip-inner-->
+				<div class="strip-cover">
+					<h2 class="strip-cover__title">Nkanyiso</h2>
+					<span class="strip-cover__subtitle">2019</span>
+				</div>
+			</div><!--/strip-outer-->
+			<div class="content">
+				<article class="content__item">
+					<!-- <div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/1.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Manje</h2>
+						<p class="content__item-text">The best way for student-athletes to stay healthy while keeping on schedule.</p>
+					</div> -->
+					<div style='height: 100vh;'>
+						<div class="project-cover">
+							<div class="img-outer img-outer--content">
+								<div class="img-inner img-inner--content" style="background-image: url(img/Manje.png);"></div>
+							</div>
+							<div class="content__item-copy">
+								<h2 class="content__item-title" style='font-size: 400%; font-weight: 700'>Manje</h2>
+								<p class="content__item-text" style='font-size: 150%'>The best way for student-athletes to stay healthy while keeping on schedule.</p>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="content__item">
+					<!-- <div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/2.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Kas</h2>
+						<p class="content__item-text">1000 sweaters in your pocket.</p>
+					</div> -->
+					<div style='height: 100vh;'>
+						<div class="project-cover">
+							<div class="img-outer img-outer--content">
+								<div class="img-inner img-inner--content" style="background-image: url(img/Kas.png);"></div>
+							</div>
+							<div class="content__item-copy">
+								<h2 class="content__item-title" style='font-size: 400%; font-weight: 700'>Kas</h2>
+								<p class="content__item-text" style='font-size: 150%'>1000 sweaters in your pocket.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- CONTENT: KAS -->
+
+					<div style='height: 100vh; align-items: center; justify-content: center; display: flex; background-color: #171717'>
+						<div class='project-intro-text' style='padding: 5% 15%; text-align: center;'>
+							<h2 style='font-size: 300%; font-weight: 700; color: white'>A Digital Closet</h2>
+							<p style='font-size: 150%; color: white'>
+								Picture this: You are a high school student about to embark on a semester long study
+								abroad program in the north of France. You will
+								be there during the winter and therefore it is essential that you pack warm clothing. However, there is one problem, you attend
+								boarding school and will only have two days at home to pack. Best outcome: you find all the necessary clothing you need and bring it
+								along. Most likely outcome: You realize 5 minutes before your flight is about to depart that you have a new sweater that your aunt from
+								New York bought for you, that you haven’t worn yet. Now you’re kicking yourself, because you realize that you will probably have to
+								buy a new sweater in France - one that you hadn’t budgeted for. But how could you have remembered about that one sweater from
+								months ago? It’s not as if you wear them often.
+								<br><br>If only there was a way to keep track of all your existing clothing items without having to scour through your entire closet..
+							</p>
+						</div>
+					</div>
+					<div style='height: 100vh; background-color: silver'>
+						<img src="img/starterpack.jpg" alt="David Cameron at Brown" height="100%" width="100%">
+					</div>
+					<div style='height: 100vh; width: 100vw; background-color: white'>
+						<div class='project-intro-text' style='padding: 5% 25%; width: 100%; background-color: white'>
+							<h2 style='font-size: 300%; font-weight: 700; text-align: center; color: #171717'>Overview</h2>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Goal</span>: Develop an application that allows users to easily sort through and manage their closet.</p>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Type</span>: UI Designer</p>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Team</span>: Myself.</p>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Duration</span>: January 2016 (5 Days).</p>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Skills</span>: User Interface Design, Visual Design, Prototyping, Product Thinking.</p>
+						</div>
+					</div>
+					<div style='height: 100%; background-color: #f0f0f0; padding: 5% 0%;'>
+
+						<div class='project-intro-text' style='padding: 0%;'>
+							<h2 style='text-align: center; padding-left: 25%; padding-right: 25%; font-size: 300%; font-weight: 700; color: #171717'>Mockups</h2>
+							<!-- <p style='text-align: center; padding: 0% 25%; font-size: 195%; font-weight: 600; color: #910000'>Version 1</p> -->
+							<div style='padding: 2.5% 15%'>
+								<img src="img/Kas-Sketches.png" alt="first iteration" height="100%" width="100%">
+							</div>
+
+						</div>
+
+					</div>
+					<div style='height: 100%; background-color: #171717'>
+						<div class='project-intro-text' style='padding: 0%;'>
+							<h2 style='text-align: center; padding-top: 5%; padding-left: 25%; padding-right: 25%; font-size: 300%; font-weight: 700; color: white'>Final Version</h2>
+							<!-- <p style='text-align: center; padding: 0% 25%; font-size: 195%; font-weight: 600; color: #910000'>Dark</p> -->
+							<div style='padding: 2.5% 15%'>
+								<img src="img/Kas-Phones.png" alt="final iteration" height="100%" width="100%">
+							</div>
+						</div>
+					</div>
+
+					<!--  -->
+
+				</article>
+
+				<article class='content__item'>
+					<div style='height: 100vh;'>
+						<div class="project-cover">
+							<div class="img-outer img-outer--content">
+								<div class="img-inner img-inner--content" style="background-image: url(img/UbicaCoverDark.jpg);"></div>
+							</div>
+							<div class="content__item-copy">
+								<h2 class="content__item-title" style='font-size: 400%; font-weight: 700'>Ubica</h2>
+								<p class="content__item-text" style='font-size: 150%'>Meaningful technology that connects people.</p>
+							</div>
+						</div>
+					</div>
+					<div style='height: 100vh; align-items: center; justify-content: center; display: flex; background-color: #171717'>
+						<div class='project-intro-text' style='padding: 5% 25%; text-align: center;'>
+							<h2 style='font-size: 300%; font-weight: 700; color: white'>The story of David...</h2>
+							<p style='font-size: 200%; color: white'>In 2017, David Cameron visited the campus of Brown University for a lecture. Tickets were free and my friend and I eagerly wanted to attend. This is a story of how our frustration in being unable to see Mr. Cameron, led to the founding of a startup.</p>
+						</div>
+					</div>
+					<div style='height: 100vh; background-color: silver'>
+						<img src="img/davidcameron.jpg" alt="David Cameron at Brown" height="100%" width="100%">
+					</div>
+					<div style='height: 100vh; width: 100vw; background-color: white'>
+						<div class='project-intro-text' style='padding: 5% 25%; width: 100%; background-color: white'>
+							<h2 style='font-size: 300%; font-weight: 700; text-align: center; color: #171717'>Overview</h2>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Goal</span>: Design the Ubica mobile app for students.</p>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Type</span>: Co-Founder of Ubica - Product Design.</p>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Team</span>: Samuel Aguilar (Co-Founder).</p>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Duration</span>: February 2017 - May 2017 (4 Months).</p>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Skills</span>: Interaction Design, Visual Design, Prototyping, Product Thinking.</p>
+						</div>
+					</div>
+					<div style='height: 100%; background-color: #f0f0f0; padding: 5% 0%;'>
+						<div class='project-intro-text' style='padding: 0% 25%;'>
+							<h2 style='font-size: 300%; font-weight: 700; color: #171717'>My Role</h2>
+							<p style='font-size: 170%; color: #171717'>I was part of the two-person design team, leading the user research and conducting interviews with stakeholders. I also worked alongside my partner, Sam Aguilar, in producing design iterations of the final product.</p>
+						</div>
+						<div class='project-intro-text' style='padding: 0% 25%;'>
+							<h2 style='padding-top: 5%; font-size: 300%; font-weight: 700; color: #171717'>The Challenge</h2>
+							<p style='font-size: 170%; color: #171717'>
+								We approached the problem facing 3 central pain points. <span style='font-weight: 700'>Apathy, Attention Span</span> and <span style='font-weight: 700'>Social Engagement</span>. Through our research we had determined that our end-user was apathetic, had a low attention span and desired social engagement.
+
+								With this setting we had to not only focus on the functionality and usability of the product - beyond current competitors - but also aim to address the aforementioned user pain points.
+							</p>
+							<!-- Show three sad faces representing the pain points. -->
+						</div>
+						<div class='project-intro-text' style='padding: 0%;'>
+							<h2 style='padding-top: 5%; padding-left: 25%; padding-right: 25%; font-size: 300%; font-weight: 700; color: #171717'>Research</h2>
+							<p style='padding: 0% 25%; font-size: 220%; font-weight: 600; color: #171717'>Competitors</p>
+							<div style='padding: 2.5% 20%'>
+								<img src="img/alternatives.png" alt="Competitors" height="100%" width="100%">
+							</div>
+							<p style='padding: 0% 25%; font-size: 195%; font-weight: 600; color: #910000'>Insights</p>
+							<p style='padding: 0% 25%; font-size: 170%; color: #171717'>
+								<span style='font-weight: 700'>Social Media</span>
+								<br>There are several digital avenues used to generate a complete image of
+								what’s happening on campus. Events were discovered primarily through
+								email as not very many organizations were on Facebook - even fewer using
+								Twitter. GroupMe was highly popular amongst a handful of organizations. Slack was used almost solely to coordinate internal
+								meetings. (e.g. Ivy Film Festival).
+							</p>
+							<p style='padding: 0% 25%; font-size: 170%; color: #171717'>
+								<span style='font-weight: 700'>Bulletin Boards</span>
+								<br>Found scattered across campus. Major problem was that past events did not always get taken
+								down until days or in rare cases weeks later. They were far less reliable not as
+								you would only know about events if you happened to walk passed a very specific board.
+							</p>
+							<p style='padding: 0% 25%; font-size: 170%; color: #171717'>
+								<span style='font-weight: 700'>Word of Mouth</span>
+								<br>Friends will either call, text, or occasionally schedule events
+								and meetings through email. To stay informed about social
+								gatherings, most people rely on word of mouth through close friend circles.
+							</p>
+						</div>
+						<div class='project-intro-text' style='padding: 0%;'>
+							<h2 style='padding-top: 5%; padding-left: 25%; padding-right: 25%; font-size: 300%; font-weight: 700; color: #171717'>Mockups</h2>
+							<p style='text-align: center; padding: 0% 25%; font-size: 195%; font-weight: 600; color: #910000'>Version 1</p>
+							<div style='padding: 2.5% 15%'>
+								<img src="img/Vone.png" alt="first iteration" height="100%" width="100%">
+							</div>
+							<p style='text-align: center; padding: 0% 25%; font-size: 195%; font-weight: 600; color: #910000'>Version 2</p>
+							<div style='padding: 2.5% 15%'>
+								<img src="img/Vtwo.png" alt="second iteration" height="100%" width="100%">
+							</div>
+							<p style='text-align: center; padding: 0% 25%; font-size: 195%; font-weight: 600; color: #910000'>Version 3</p>
+							<div style='padding: 2.5% 15%'>
+								<img src="img/Vthree.png" alt="third iteration" height="100%" width="100%">
+							</div>
+							<p style='text-align: center; padding: 0% 25%; font-size: 195%; font-weight: 600; color: #910000'>Version 4</p>
+							<div style='padding: 2.5% 15%'>
+								<img src="img/Vfour.png" alt="third iteration" height="100%" width="100%">
+							</div>
+						</div>
+
+					</div>
+					<div style='height: 100%; background-color: #171717'>
+						<div class='project-intro-text' style='padding: 0%;'>
+							<h2 style='text-align: center; padding-top: 5%; padding-left: 25%; padding-right: 25%; font-size: 300%; font-weight: 700; color: white'>Final Version</h2>
+							<p style='text-align: center; padding: 0% 25%; font-size: 195%; font-weight: 600; color: #910000'>Dark</p>
+							<div style='padding: 2.5% 15%'>
+								<img src="img/finalite.png" alt="final iteration" height="100%" width="100%">
+							</div>
+						</div>
+					</div>
+					<!-- <div class="project-cover">
+						<div class="img-outer img-outer--content">
+							<div class="img-inner img-inner--content" style="background-image: url(img/UbicaCoverDark.jpg);"></div>
+						</div>
+						<div class="content__item-copy">
+							<h2 class="content__item-title">Ubica</h2>
+							<p class="content__item-text">Meaningful technology that connects people.</p>
+						</div>
+					</div>
+					<div class='project-intro'></div> -->
+				</article>
+
+				<article class="content__item">
+					<!-- <div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/4.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Arngren</h2>
+						<p class="content__item-text">Western chaos.</p>
+					</div> -->
+					<div style='height: 100vh;'>
+						<div class="project-cover">
+							<div class="img-outer img-outer--content">
+								<div class="img-inner img-inner--content" style="background-image: url(img/Arngren.png);"></div>
+							</div>
+							<div class="content__item-copy">
+								<h2 class="content__item-title" style='font-size: 400%; font-weight: 700'>Arngren</h2>
+								<p class="content__item-text" style='font-size: 150%'>Exploring a different design philosophy.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- CONTENT: Arngren -->
+
+					<div style='height: 100vh; align-items: center; justify-content: center; display: flex; background-color: #171717'>
+						<div style='height: 100vh; align-items: center; justify-content: center; display: flex; background-color: #171717'>
+							<div class='project-intro-text' style='padding: 0%; text-align: center;'>
+								<h2 style='font-size: 300%; font-weight: 700; color: white'>A philosophy challenge</h2>
+								<p style='font-size: 200%; color: white'>
+									Redesigning a Norwegian hobby store...
+								</p>
+							</div>
+						</div>
+					</div>
+					<div style='height: 100vh; background-color: #f0f0f0; align-items: center; display: flex; justify-content: center;'>
+						<img src="img/oldarngren.png" alt="David Cameron at Brown" height="auto%" width="70%">
+					</div>
+					<div style='height: 100vh; width: 100vw; background-color: white'>
+						<div class='project-intro-text' style='padding: 5% 25%; width: 100%; background-color: white'>
+							<h2 style='font-size: 300%; font-weight: 700; text-align: center; color: #171717'>Overview</h2>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Goal</span>: Redesign the website for Arngren, focusing on easier navigation for a US audience.</p>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Type</span>: UI Designer</p>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Team</span>: Myself.</p>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Duration</span>: October 2018 (2 Weeks).</p>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Skills</span>: User Interface Design, Visual Design, Prototyping, Product Thinking.</p>
+						</div>
+					</div>
+					<div style='height: 100%; background-color: #f0f0f0; padding: 5% 0%;'>
+
+						<div class='project-intro-text' style='padding: 0%;'>
+							<h2 style='text-align: center; padding-left: 25%; padding-right: 25%; font-size: 300%; font-weight: 700; color: #171717'>Mockups</h2>
+							<!-- <p style='text-align: center; padding: 0% 25%; font-size: 195%; font-weight: 600; color: #910000'>Version 1</p> -->
+							<div style='padding: 2.5% 15%'>
+								<img src="img/Arn-Mockups.png" alt="first iteration" height="100%" width="100%">
+							</div>
+
+						</div>
+
+					</div>
+					<div style='height: 100%; background-color: #171717'>
+						<div class='project-intro-text' style='padding: 0%;'>
+							<h2 style='text-align: center; padding-top: 5%; padding-left: 25%; padding-right: 25%; font-size: 300%; font-weight: 700; color: white'>Final Version</h2>
+							<!-- <p style='text-align: center; padding: 0% 25%; font-size: 195%; font-weight: 600; color: #910000'>Dark</p> -->
+							<div style='padding: 2.5% 15%'>
+								<img src="img/Arn-Final.png" alt="final iteration" height="100%" width="100%">
+							</div>
+						</div>
+					</div>
+
+					<!--  -->
+
+				</article>
+				<article class="content__item">
+					<!-- <div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/5.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Almanac</h2>
+						<p class="content__item-text">Rethinking the event experience.</p>
+					</div> -->
+					<div style='height: 100vh;'>
+						<div class="project-cover">
+							<div class="img-outer img-outer--content">
+								<div class="img-inner img-inner--content" style="background-image: url(img/Almanac.png);"></div>
+							</div>
+							<div class="content__item-copy">
+								<h2 class="content__item-title" style='font-size: 400%; font-weight: 700'>Almanac</h2>
+								<p class="content__item-text" style='font-size: 150%'>Rethinking the event experience.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- CONTENT: Almanac -->
+
+					<div style='height: 100vh; align-items: center; justify-content: center; display: flex; background-color: #171717'>
+						<div style='height: 100vh; align-items: center; justify-content: center; display: flex; background-color: #171717'>
+							<div class='project-intro-text' style='padding: 5% 25%; text-align: center;'>
+								<h2 style='font-size: 300%; font-weight: 700; color: white'>Administrators First</h2>
+								<p style='font-size: 200%; color: white'>
+									Poor event experiences are a problem rooted in information, not effort. Therefore, the power to create and unlock unparalleled event experiences lies in the hands of the people who know the audience best - the hosts (administrators).
+								</p>
+							</div>
+						</div>
+					</div>
+					<div style='height: 100vh; background-color: #f0f0f0; align-items: center; display: flex; justify-content: center;'>
+						<img src="img/musicband.jpeg" alt="Band" height="auto" width="100%">
+					</div>
+					<div style='height: 100vh; width: 100vw; background-color: white'>
+						<div class='project-intro-text' style='padding: 5% 25%; width: 100%; background-color: white'>
+							<h2 style='font-size: 300%; font-weight: 700; text-align: center; color: #171717'>Overview</h2>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Goal</span>: Design the Almanac dashboard, the central portal for event administrators.</p>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Type</span>: Product Designer</p>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Team</span>: Samuel Aguilar (Co-Founder).</p>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Duration</span>: June 2019 - August 2019 (2 Months).</p>
+							<p style='font-size: 170%; color: #171717'><span style='font-weight: 700'>Skills</span>: Product Design, React Native, Databases, User Interface Design, Visual Design, Prototyping, Product Thinking.</p>
+						</div>
+					</div>
+					<div style='height: 100%; background-color: #f0f0f0; padding: 5% 0%;'>
+
+						<div class='project-intro-text' style='padding: 0%;'>
+							<h2 style='text-align: center; padding-left: 25%; padding-right: 25%; font-size: 300%; font-weight: 700; color: #171717'>Mockups</h2>
+							<!-- <p style='text-align: center; padding: 0% 25%; font-size: 195%; font-weight: 600; color: #910000'>Version 1</p> -->
+							<div style='padding: 2.5% 15%'>
+								<img src="img/Ana-Group.png" alt="first iteration" height="100%" width="100%">
+							</div>
+
+							<div style='padding: 2.5% 15%'>
+								<img src="img/Analytik.png" alt="first iteration" height="100%" width="100%">
+							</div>
+
+							<div style='padding: 2.5% 15%'>
+								<img src="img/Alma-Create.png" alt="first iteration" height="100%" width="100%">
+							</div>
+
+						</div>
+
+					</div>
+					<div style='height: 100%; background-color: #171717'>
+						<div class='project-intro-text' style='padding: 0%;'>
+							<h2 style='text-align: center; padding-top: 5%; padding-left: 25%; padding-right: 25%; font-size: 300%; font-weight: 700; color: white'>Final Version</h2>
+							<!-- <p style='text-align: center; padding: 0% 25%; font-size: 195%; font-weight: 600; color: #910000'>Dark</p> -->
+							<div style='padding: 2.5% 15%'>
+								<img src="img/Almanac-Final.png" alt="final iteration" height="100%" width="100%">
+							</div>
+						</div>
+					</div>
+
+					<!--  -->
+
+				</article>
+				<article class="content__item">
+					<!-- <div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/6.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Experimentations</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div> -->
+					<div style='height: 100vh;'>
+						<div class="project-cover">
+							<div class="img-outer img-outer--content">
+								<div class="img-inner img-inner--content" style="background-image: url(img/migrating.png);"></div>
+							</div>
+							<div class="content__item-copy">
+								<h2 class="content__item-title">Experimentations</h2>
+								<p class="content__item-text">Migrating over, coming soon.</p>
+							</div>
+						</div>
+					</div>
+				</article>
+				<!-- <article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/7.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Cathedral</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/8.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Propinquity</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/9.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Lissome</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/10.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Moiety</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/11.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Mondegreen</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/12.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Cathedral</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/13.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Gambol</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/14.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Forbearance</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/15.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Evanescent</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/16.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Embrocation</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/17.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Bucolic</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/18.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Eloquence</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/19.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Cathedral</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article> -->
+				<button class="content__close" aria-label="Close content"><svg width="12" height="26" viewBox="0 0 12 26"><path d="M5.293 25H5v-.293l-5-5L.707 19 5 23.293V0h1v23.657L10.657 19l.707.707-5.657 5.657-.025-.025-.025.025L5.293 25z"/></svg></svg></button>
+			</div>
+		</main>
+		<div class="cursor">
+			<div class="cursor__inner cursor__inner--circle">
+				<div class="cursor__side cursor__side--left"></div>
+				<div class="cursor__side cursor__side--right"></div>
+			</div>
+		</div>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/draggabilly.pkgd.min.js"></script>
+		<script src="js/demo.js"></script>
+		<script>
+			// Preload all the images in the page
+			imagesLoaded(document.querySelectorAll('.img-inner'), {background: true}, () => document.body.classList.remove('loading'));
+		</script>
+	</body>
+</html>
