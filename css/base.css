@@ -175,10 +175,12 @@ main {
 	width: 100%;
 	position: absolute;
 	cursor: grab;
+	/* background-color: yellow; */
 }
 
 .draggable:active {
 	cursor: grabbing;
+	/* background-color: yellow; */
 }
 
 .strip {
@@ -197,6 +199,7 @@ main {
 	display: flex;
 	flex-direction: column-reverse;
 	justify-content: center;
+	/* background-color: green; */
 }
 
 .img-outer {
@@ -267,6 +270,29 @@ main {
 
 }
 
+/* NEW Edit */
+.image__item-link {
+	pointer-events: inherit;
+	cursor: pointer;
+	display: block;
+	position: relative;
+}
+
+.image__item-link::before {
+	content: '';
+	/* position: absolute; */
+	/* width: 160%;
+	height: 120%;
+	left: -30%;
+	top: -10%; */
+
+}
+
+.image__item-link:hover + .strip__item-plus {
+	display: block;
+}
+/* --- */
+
 
 
 .strip__item-link span {
@@ -295,7 +321,7 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: var(--color-cover);
+	/* color: var(--color-cover); */
 	pointer-events: none;
 	opacity: 0;
 }
@@ -553,4 +579,41 @@ main {
 		height: 25px;
 		border: 1px solid #fff;
 	}
+
+
+	/* BUTTON */
+	.button {
+	  background-color: #4CAF50; /* Green */
+	  border: none;
+	  color: white;
+	  padding: 16px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  -webkit-transition-duration: 0.4s; /* Safari */
+	  transition-duration: 0.4s;
+	  cursor: pointer;
+	}
+
+	.button3 {
+	  background-color: #333333;
+		background-image: linear-gradient(to bottom, #dedede, #fff);
+	  color: #777777;
+		font-weight: 200;
+		font-family: 'Avenir';
+	  /* border: 2px solid #e7e7e7; */
+		/* border-radius: 12px */
+	}
+
+	.button3:hover {
+	  background-color: #e7e7e7;
+		background-image: linear-gradient(to bottom, #555555, #333333);
+	  color: white;
+		font-family: 'Avenir';
+		font-weight: 300;
+		/* border-radius: 12px */
+	}
+	button:focus {outline:0;}
 }
